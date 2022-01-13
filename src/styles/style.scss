@@ -1,0 +1,136 @@
+
+//===<ПЕРЕМЕННЫЕ>===//
+$minWidth: 320px;
+$maxWidth: 1152px;
+$maxWidthContainer: 856px;
+$md1: $maxWidthContainer + 12px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+//===<ПЕРЕМЕННЫЕ>===//
+
+//===<ОСНОВНАЯ СЕТКА>===//
+._container{
+    max-width: $maxWidthContainer;
+    margin: 0 auto;
+
+    @media (max-width: $md1){
+        max-width: 750px;
+    }
+    @media (max-width: $md2){
+        max-width: none;
+        padding: 0 10px;
+    }
+}
+//===<ОСНОВНАЯ СЕТКА>===//
+
+.page{
+    padding: 90px 0px 0px 0px;
+    flex: 1 1 auto;
+    @media(max-width: $md3){
+        padding: 30px 0px 0px 0px;
+    }
+}
+
+
+._ibg{
+    position: relative;
+    img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top:0;
+        left: 0;
+        object-fit: cover;
+    }
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__item{
+        transition: color 0.3s ease 0s;
+        margin: 0px 17px;
+        font-size: 30px;
+        color: inherit;
+        @media (min-width: $md2) {
+            &:hover{
+                color:#ff6464;
+            }
+            
+        }
+
+    }
+}
+
+//===<ОСНОВНЫЕ СТИЛИ>===//
+body{
+    margin: 0px;
+    padding: 0px;   
+    font-family: "Heebo";
+}
+
+a{
+    text-decoration: none;
+}
+
+li{ 
+    list-style: none;
+}
+
+.title{
+    font-family: "Heebo";
+    font-size: 44px;
+    font-weight: 700;
+    color: #21243d;
+    line-height: 60 / 44 * 100%;
+
+    @media (max-width: $md3){
+        font-size: 32px;
+    }
+
+}
+
+.text{
+    font-family: "Heebo";
+    font-size: 16px;
+    line-height: 23 / 16 * 100%;
+    color: #21243d;
+}
+
+.btn{
+    font-family: "Heebo";
+    background: #ff6464;
+    border-radius: 2px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29 / 20 * 100%;
+    color: white;
+    height: 47px;
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    padding: 0px 20px;
+    transition: background-color 0.3s ease 0s;
+
+    @media (min-width: 992px){
+        &:hover{
+            background-color: #bb4949;
+
+        }
+    }
+}
+//===<ОСНОВНЫЕ СТИЛИ>===//
+
+//===<ИМПОРТЫ SCSS>===//
+@import "fonts.scss";
+@import "header.scss";
+@import "home.scss";
+@import "works.scss";
+@import "footer.scss";
+@import "blog.scss";
+@import "works.scss";
+@import "article.scss";
+//===<ИМПОРТЫ SCSS>===//
