@@ -1,8 +1,7 @@
-
 //===<ПЕРЕМЕННЫЕ>===//
 $minWidth: 320px;
-$maxWidth: 1152px;
-$maxWidthContainer: 856px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1296px;
 $md1: $maxWidthContainer + 12px;
 $md2: 991.98px;
 $md3: 767.98px;
@@ -24,15 +23,16 @@ $md4: 479.98px;
 }
 //===<ОСНОВНАЯ СЕТКА>===//
 
+//===<ОСНОВНЫЕ СТИЛИ>===//
 .page{
-    padding: 90px 0px 0px 0px;
+    top: 0;
+    padding: 0px 0px 0px 0px;
     flex: 1 1 auto;
-    @media(max-width: $md3){
-        padding: 30px 0px 0px 0px;
-    }
 }
-
-
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
 ._ibg{
     position: relative;
     img{
@@ -44,93 +44,100 @@ $md4: 479.98px;
         object-fit: cover;
     }
 }
-
-.social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    &__item{
-        transition: color 0.3s ease 0s;
-        margin: 0px 17px;
-        font-size: 30px;
-        color: inherit;
-        @media (min-width: $md2) {
-            &:hover{
-                color:#ff6464;
-            }
-            
-        }
-
-    }
-}
-
-//===<ОСНОВНЫЕ СТИЛИ>===//
 body{
+    font-family: "Roboto";
+    font-style: normal;
     margin: 0px;
-    padding: 0px;   
-    font-family: "Heebo";
+    padding: 0px;  
+    color: #FFFFFF; 
+    background: #000;
 }
-
 a{
     text-decoration: none;
 }
-
 li{ 
     list-style: none;
 }
-
-.title{
-    font-family: "Heebo";
-    font-size: 44px;
-    font-weight: 700;
-    color: #21243d;
-    line-height: 60 / 44 * 100%;
-
-    @media (max-width: $md3){
-        font-size: 32px;
-    }
-
+ul{
+    padding: 0;
+    margin: 0;
 }
-
+.digit{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 50 / 36 * 100%;
+    color: #FFFFFF;
+}
 .text{
-    font-family: "Heebo";
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
     font-size: 16px;
-    line-height: 23 / 16 * 100%;
-    color: #21243d;
+    line-height: 22 / 16 * 100%;
+    color: #FFFFFF;
+    opacity: 0.4;
 }
-
-.btn{
-    font-family: "Heebo";
-    background: #ff6464;
-    border-radius: 2px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 29 / 20 * 100%;
-    color: white;
-    height: 47px;
-    display: inline-flex;
-    align-items: center; 
+.ellipse{
+    position: relative;
+    display: flex; 
+    flex: 0 0 auto;
+    align-items: center;
     justify-content: center;
-    text-align: center;
-    padding: 0px 20px;
-    transition: background-color 0.3s ease 0s;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    overflow: hidden;
+    &._deg45{
+        transform: rotate(45deg);
+    }
+    &._deg90{
+        transform: rotate(90deg);
+    }
+    &._deg135{
+        transform: rotate(135deg);
+    }
+    &._deg180{
+        transform: rotate(180deg);
+    }
+    &._deg225{
+        transform: rotate(225deg);
+    }
+ 
+    &__div1{
+        position: absolute;
+        display: flex; 
+        flex: 0 0 auto;
+        align-items: center;
+        justify-content: center;
 
-    @media (min-width: 992px){
-        &:hover{
-            background-color: #bb4949;
-
-        }
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    }
+    
+    &__div2{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;            
+        background: #000;
+    } 
+    &__div3{
+        position: absolute;
+        width: 85px;
+        height: 42px;
+        bottom: 2.5px;
+        background: #000;
     }
 }
 //===<ОСНОВНЫЕ СТИЛИ>===//
 
 //===<ИМПОРТЫ SCSS>===//
-@import "fonts.scss";
 @import "header.scss";
-@import "home.scss";
-@import "works.scss";
+@import "pages.scss";
 @import "footer.scss";
-@import "blog.scss";
-@import "works.scss";
-@import "article.scss";
+@import "fonts.scss";
 //===<ИМПОРТЫ SCSS>===//

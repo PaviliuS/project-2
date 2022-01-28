@@ -1,0 +1,199 @@
+//============================================================================//
+.header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top:0;
+    z-index: 50;
+    @media (max-width: $md2){
+        background: rgba(0,0,0, 0.6);
+    }
+  
+ 
+    &__container{
+        display: flex;
+        min-height: 140px;
+        align-items: center;
+        padding: 0px 80px 0px 80px;
+
+        @media (max-width: $md2){
+            padding: 0px 10px 0px 10px;
+            min-height: 60px;
+        }
+    }
+
+    &__menu{
+        display: flex;  
+        justify-content: right;
+        flex: 1 1 auto;
+
+        margin: 0px 80px 0px 80px;
+        @media (max-width: $md2) {
+            display: none;       
+        }
+    }
+
+    &__button{
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: right;
+
+        @media (max-width: $md2) {
+            display: none;       
+        }
+    }
+
+    &__overlay{
+        display: none;
+        @media (max-width: $md2){
+            display: flex;
+            flex: 1 1 auto;
+            justify-content: right;
+            
+        }
+    }
+}
+
+
+.logo{
+    display: flex;
+    justify-content: left;
+
+    &__img{
+        font-size: 45px;
+        background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+        margin: 0;
+        background-clip: text;        
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.menu{
+    &__list{
+        display: flex;  
+        flex-wrap: wrap;
+    }
+    &__item{
+        margin: 0px 50px 0px 0px;
+        &:last-child{
+            margin: 0px 0px 0px 0px;
+        }
+    }
+    &__link{
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24 / 16 * 100%;
+        color: #fff;
+
+        &:hover{
+            transition: color 0.3s ease 0s;
+            color:  #7C6AFA;
+        }
+        &_active{
+            color:  #7C6AFA;
+        }
+    }
+}
+
+.button{
+    &__log{
+        cursor: pointer;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 30px;
+
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+        border-radius: 50px;
+        border: 0px;
+    }
+}
+
+#overlay__navigation{
+    height: 0%;
+    &._hidden{
+        height: 100%;
+    }
+}
+
+.overlay{
+    font-family: "Roboto";
+    font-size: 16px;
+    &__container{
+        height: 0%;
+        width: 300px;
+        position: fixed;
+        z-index: 0;
+        top: 0;
+        right: 0;
+        background-color: rgba(0,0,0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    &__content{
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+    &__link{
+        font-size: 16px;
+        line-height: 200%;
+        font-weight: 400;
+        color: #fff;
+        &_active{
+            color:  #7C6AFA;
+        }
+
+    }
+    &__icon{
+        display: none;
+        @media (max-width: $md2){
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+      
+            width: 40px;
+            height: 40px;
+            
+            border: 2px solid #C89AFC;
+            border-radius: 50%;
+            
+            cursor: pointer;
+    
+            & div{
+                display: flex;
+                width: 25px;
+                height: 2px;
+                margin-bottom: 6px;
+                background-color: #C89AFC;
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    } 
+    & li{
+        margin: 0 auto;
+        width: 150px;
+        border-bottom: 1px solid #C89AFC;
+        &:last-child{
+            border-bottom: 0;
+        }
+    }
+}
+
+//============================================================================//

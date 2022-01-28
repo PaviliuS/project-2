@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+@font-face {
+    font-family: 'icons';
+    src:
+      url('../fonts/icons.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="_icon-"], [class*=" _icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ._icon-icon-1:before {
+    content: "\e904";
+  }
+  ._icon-icon-2:before {
+    content: "\e905";
+  }
+  ._icon-icon-3:before {
+    content: "\e906";
+  }
+  
+  @font-face {
+    font-family: 'icons-networks';
+    src:
+      url('../fonts/icons-networks.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="_icon-networks-"], [class*=" _icon-networks-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons-networks' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ._icon-networks-facebook:before {
+    content: "\e900";
+    color: #fff;
+  }
+  ._icon-networks-instagram:before {
+    content: "\e901";
+    color: #fff;
+  }
+  ._icon-networks-vk:before {
+    content: "\e902";
+    color: #fff;
+  }
+  ._icon-networks-youtube:before {
+    content: "\e903";
+    color: #fff;
+  }
+  
+  @font-face {
+    font-family: 'icons-logo';
+    src:
+      url('../fonts/icons-logo.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="_icon-logo-"], [class*=" _icon-logo-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icons-logo' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  ._icon-logo-logo:before {
+    content: "\e900";
+  }
+  

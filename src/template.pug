@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+    body 
+        div(class="wrapper")
+
+            //- header
+            include ./pug/header.pug
+            +header(1)
+
+            //- page
+            main(class="page")
+
+                include ./pug/pages.pug
+                +main-block()
+                +last-line()
+                +about()
+                +start()
+                +advantages()
+                +partners()
+                +program()
+                +teachers()
+
+            //- footer
+            include ./pug/footer.pug
+            +footer()
+
+
+
+   
+
+          
+

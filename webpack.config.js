@@ -73,18 +73,6 @@ module.exports = {
       template: __dirname + "/src/template.pug",
       filename: "index.html"
     }),
-    new HtmlWebpackPlugin({
-      template: __dirname + "/src/blog.pug",
-      filename: "blog.html"
-    }),
-    new HtmlWebpackPlugin({
-      template: __dirname + "/src/works.pug",
-      filename: "works.html"
-    }),
-    new HtmlWebpackPlugin({
-      template: __dirname + "/src/article.pug",
-      filename: "article.html"
-    }),
  
     new HtmlWebpackPugPlugin(),
     new MiniCssExtractPlugin({

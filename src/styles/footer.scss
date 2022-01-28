@@ -1,0 +1,170 @@
+.footer{
+    background: #000;
+    position: relative;
+    margin-top: 200px;
+    @media (max-width: $md1) {
+        margin-top: 200px;
+    }
+    @media (max-width: $md2) {
+        margin-top: 150px;
+    }
+    @media (max-width: $md3) {
+        margin-top: 150px;
+    }
+    @media (max-width: $md4) {
+        margin-top: 150px;  
+    }
+ 
+    &__container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__title{
+        font-weight: bold;
+        font-size: 48px;
+        line-height: 140%;
+        text-align: center;
+        margin-bottom: 50px;
+        @media (max-width: $md3) {
+            font-size: 30px;
+            margin-bottom: 50px;
+        } 
+    }
+    &__text{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        opacity: 0.5;
+        text-align: center; 
+        margin-bottom: 50px;  
+        @media (max-width: $md3) {       
+            margin-bottom: 50px;
+        }
+    }
+
+    &__block{
+        justify-content: center;
+        position: relative;
+        width: 500px;
+        height: 45px;
+        display: flex; 
+        @media (max-width: $md3) {
+            width: 250px;
+            flex-direction: column;
+            align-items: center;
+            height: 90px;
+        } 
+    }
+    &__button{ 
+        position: absolute;  
+        display: flex;    
+        height: 45px; 
+        width: 150px;
+        @media (max-width: $md3) {
+            position: relative;
+           
+        } 
+
+        right: 0;   
+        & a{
+            cursor: pointer;
+
+            display: flex;
+            flex: 0 0 auto;
+            height: 45px;
+            width: 150px;
+
+            justify-content: center;
+            align-items: center;
+ 
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            text-align: center;
+            color: #FFFFFF;
+    
+            //padding: 11px 30px;
+    
+            background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+            border-radius: 50px;
+            border: 0;
+        }
+    
+    }
+    &__input{
+        position: absolute;
+        left: 0;
+           @media (max-width: $md3) {
+                position: relative;
+                margin: 10px 0px 20px 0px;
+               
+            } 
+        & input{
+            width: 280px;
+            height: 43px;
+            background-color: rgba(255, 255, 255, 0.25);
+            border-radius: 50px 0px 0px 50px; 
+            border: 0;
+            margin: 0;
+            padding-left: 30px;
+            padding-right: 60px;
+     
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 160%;
+
+            color: #fff;
+
+            @media (max-width: $md3) {
+                border-radius: 50px; 
+                width: 180px;        
+            }      
+        }      
+        & input::placeholder{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 160%;
+            color: #fff;
+        }
+        & input:focus {
+            color: #fff;
+            background-color: rgba(255, 255, 255, 0.3);    
+            outline: 0;
+        }    
+    }
+
+    &__icons{
+        display: flex;
+        flex-direction: row;
+        margin: 34px 0px 50px 0px;
+    }
+    &__icon{
+        margin: 0px 20px 0px 0px;
+        &:last-child{
+            margin: 0px;
+        }
+    }
+    &__icon-link{
+        display: flex;
+        flex: 0 0 auto;
+        justify-content: center;
+        align-items: center;
+        font-size: 25px;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+        border-radius: 50%;
+        color: #fff;
+    }
+
+    &__info{
+        text-align: center;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
+        opacity: 0.8;
+    }
+}
